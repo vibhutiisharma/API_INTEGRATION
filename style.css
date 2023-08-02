@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #008CBA;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="loginId">Login ID:</label>
+        <input type="text" id="loginId" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Customer List -->
+    <h1>Customer List</h1>
+    <table id="customerList">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Street</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be populated dynamically -->
+        </tbody>
+    </table>
+
+    <!-- Create New Customer Form -->
+    <h1>Create New Customer</h1>
+    <form id="createCustomerForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+        <label for="street">Street:</label>
+        <input type="text" id="street" required>
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+        <label for="city">City:</label>
+        <input type="text" id="city" required>
+        <label for="state">State:</label>
+        <input type="text" id="state" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" required>
+        <button type="submit">Create</button>
+    </form>
+
+    <!-- Delete Customer Form -->
+    <h1>Delete Customer</h1>
+    <form id="deleteCustomerForm">
+        <label for="deleteUuid">Customer UUID:</label>
+        <input type="text" id="deleteUuid" required>
+        <button type="submit">Delete</button>
+    </form>
+
+    <!-- Update Customer Form -->
+    <h1>Update Customer</h1>
+    <form id="updateCustomerForm">
+        <label for="updateUuid">Customer UUID:</label>
+        <input type="text" id="updateUuid" required>
+        <!-- The rest of the customer information fields -->
+        <button type="submit">Update</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
