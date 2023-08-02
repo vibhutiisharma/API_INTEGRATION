@@ -1,4 +1,3 @@
-// ApiClient.java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -42,5 +41,5 @@ public class ApiClient {
         }
     }
 
-    // Implement methods for create, get customer list, delete, and update using the bearer token.
+    
 }
